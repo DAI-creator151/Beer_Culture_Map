@@ -74,7 +74,7 @@
   const FIREBASE_PROJECT_ID = 'beerexplorer-9dc7d'; // Ersätt med ditt Firebase Project ID
   
   // OBS: Skiftlägeskänsligt! Se till att 'breweries' matchar namnet i din databas exakt (litet eller stort b)
-  const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${FIREBASE_PROJECT_ID}/databases/(default)/documents/breweries`;
+  const firestoreUrl = `https://firestore.googleapis.com/v1/projects/${FIREBASE_PROJECT_ID}/databases/(default)/documents/breweries?pageSize=300`;
 
   map.on('load', () => {
     fetch(firestoreUrl)
