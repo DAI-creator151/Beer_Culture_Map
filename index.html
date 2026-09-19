@@ -115,9 +115,7 @@
             }
           });
         } else {
-          alert("Firestore skickade " + (data.documents?.length || 0) + " bryggerier");
-
-    if (data.documents && data.documents.length > 0) {
+          console.log('Inga bryggerier hittades i databasen.');
         }
       })
       .catch(error => {
